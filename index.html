@@ -9,64 +9,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Module 2 - Intro to HTML5</title>
+    <title>Module 3 - Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Our Menu</h1>
-    <div id="container">
-        <section id="sec1">
-            <div>
-                <h3>Chicken</h3>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
-        <section id="sec2">
-            <div>
-                <h3>Beef</h3>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </section>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <a class="navbar-brand" href="#">FOOD, LLC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center">
+                <li class="nav-items">
+                    <a class="nav-link text-dark" id="btn-sensors" href="#">Chicken<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link text-dark" id="btn-alerts" href="#">Beef<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link text-dark" id="btn-alerts" href="#">Sushi<span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row text-center" style="margin: 1em 0 1.5em 0;">
+            <h1 class="col-md-12 col-sm-12 col-xs-12"> Our Menu </h1>
+        </div>
+        <div class="row text-center">
+            <div class="col-xs-12 desc-text">
+                <!-- <div class="desc-text"> -->
+                    <h4 class="">Chicken</h3>
+                    <p class="text-justify">
+                        The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red
+                        junglefowl (Gallus gallus). They are one of the most common and widespread domestic animals,
+                        with a total population of 23.7 billion as of 2018[1], up from more than 19 billion in 2011.[2]
+                        There are more chickens in the world than any other bird or domesticated fowl.[2] Humans keep
+                        chickens primarily as a source of food (consuming both their meat and eggs) and, less commonly,
+                        as pets. Originally raised for cockfighting or for special ceremonies, chickens were not kept
+                        for food until the Hellenistic period (4th–2nd centuries BC).
+                        Genetic studies have pointed to multiple maternal origins in South Asia, Southeast Asia, and
+                        East Asia,[5] but with the clade found in the Americas, Europe, the Middle East and Africa
+                        originating in the Indian subcontinent. From ancient India, the domesticated chicken spread to
+                        Lydia in western Asia Minor, and to Greece by the 5th century BC.[6] Fowl had been known in
+                        Egypt since the mid-15th century BC, with the "bird that gives birth every day" having come to
+                        Egypt from the land between Syria and Shinar, Babylonia, according to the annals of Thutmose
+                        III.
+                        In the UK and Ireland, adult male chickens over the age of one year are primarily known as
+                        cocks, whereas in the United States, Canada, Australia and New Zealand, they are more commonly
+                        called roosters. Males less than a year old are cockerels.[10] Castrated roosters are called
+                        capons (surgical and chemical castration are now illegal in some parts of the world). Females
+                        over a year old are known as hens, and younger females as pullets,[11] although in the
+                        egg-laying industry, a pullet becomes a hen when she begins to lay eggs, at 16 to 20 weeks of
+                        age. In Australia and New Zealand (also sometimes in Britain), there is a generic term chook
+                        /tʃʊk/ to describe all ages and both sexes.[12] The young are often called chicks.
 
-        <section id="sec3">
-            <div>
-                <h3>Sushi</h3>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </section>
+                        "Chicken" originally referred to young domestic fowl.[13] The species as a whole was then called
+                        domestic fowl, or just fowl. This use of "chicken" survives in the phrase "Hen and Chickens",
+                        sometimes used as a British public house or theatre name, and to name groups of one large and
+                        many small rocks or islands in the sea (see for example Hen and Chicken Islands).
 
-        <!-- <footer>
-            <p>
-                Submitted by Shalini Rajawat
-            </p>
-        </footer> -->
+                        In the Deep South of the United States, chickens are also referred to by the slang term
+                        yardbird.
+                        Chickens are omnivores.[15] In the wild, they often scratch at the soil to search for seeds,
+                        insects and even animals as large as lizards, small snakes,[16] or young mice.[17]
+
+                        The average chicken may live for five to ten years, depending on the breed.[18] The world's
+                        oldest known chicken was a hen which died of heart failure at the age of 16 years according to
+                        the Guinness World Records.[19]
+
+                        Roosters can usually be differentiated from hens by their striking plumage of long flowing tails
+                        and shiny, pointed feathers on their necks (hackles) and backs (saddle), which are typically of
+                        brighter, bolder colours than those of females of the same breed. However, in some breeds, such
+                        as the Sebright chicken, the rooster has only slightly pointed neck feathers, the same colour as
+                        the hen's. The identification can be made by looking at the comb, or eventually from the
+                        development of spurs on the male's legs (in a few breeds and in certain hybrids, the male and
+                        female chicks may be differentiated by colour). Adult chickens have a fleshy crest on their
+                        heads called a comb, or cockscomb, and hanging flaps of skin either side under their beaks
+                        called wattles. Collectively, these and other fleshy protuberances on the head and throat are
+                        called caruncles. Both the adult male and female have wattles and combs, but in most breeds
+                        these are more prominent in males. A muff or beard is a mutation found in several chicken breeds
+                        which causes extra feathering under the chicken's face, giving the appearance of a beard.
+                        Domestic chickens are not capable of long distance flight, although lighter chickens are
+                        generally capable of flying for short distances, such as over fences or into trees (where they
+                        would naturally roost). Chickens may occasionally fly briefly to explore their surroundings, but
+                        generally do so only to flee perceived danger.
+                        Chickens are gregarious birds and live together in flocks. They have a communal approach to the
+                        incubation of eggs and raising of young. Individual chickens in a flock will dominate others,
+                        establishing a "pecking order", with dominant individuals having priority for food access and
+                        nesting locations. Removing hens or roosters from a flock causes a temporary disruption to this
+                        social order until a new pecking order is established. Adding hens, especially younger birds, to
+                        an existing flock can lead to fighting and injury.[20] When a rooster finds food, he may call
+                        other chickens to eat first. He does this by clucking in a high pitch as well as picking up and
+                        dropping the food. This behaviour may also be observed in mother hens to call their chicks and
+                        encourage them to eat.
+
+                        A rooster's crowing is a loud and sometimes shrill call and sends a territorial signal to other
+                        roosters.[21] However, roosters may also crow in response to sudden disturbances within their
+                        surroundings. Hens cluck loudly after laying an egg, and also to call their chicks. Chickens
+                        also give different warning calls when they sense a predator approaching from the air or on the
+                        ground.
+                        Under natural conditions, most birds lay only until a clutch is complete, and they will then
+                        incubate all the eggs. Hens are then said to "go broody". The broody hen will stop laying and
+                        instead will focus on the incubation of the eggs (a full clutch is usually about 12 eggs). She
+                        will "sit" or "set" on the nest, protesting or pecking in defense if disturbed or removed, and
+                        she will rarely leave the nest to eat, drink, or dust-bathe. While brooding, the hen maintains
+                        the nest at a constant temperature and humidity, as well as turning the eggs regularly during
+                        the first part of the incubation. To stimulate broodiness, owners may place several artificial
+                        eggs in the nest. To discourage it, they may place the hen in an elevated cage with an open wire
+                        floor.
+
+
+                        Skull of a three-week-old chicken. Here the opisthotic bone appears in the occipital region, as
+                        in the adult Chelonian. bo = Basi-occipital, bt = Basi-temporal, eo = Opisthotic, f = Frontal,
+                        fm = Foramen magnum, fo = Fontanella, oc = Occipital condyle, op = Opisthotic, p = Parietal, pf
+                        = Post-frontal, sc = Sinus canal in supra-occipital, so = Supra-occpital, sq = Squamosal, 8 =
+                        Exit of vagus nerve.
+                        Breeds artificially developed for egg production rarely go broody, and those that do often stop
+                        part-way through the incubation. However, other breeds, such as the Cochin, Cornish and Silkie,
+                        do regularly go broody, and they make excellent mothers, not only for chicken eggs but also for
+                        those of other species — even those with much smaller or larger eggs and different incubation
+                        periods, such as quail, pheasants, turkeys, or geese.
+                    </p>
+                <!-- </div> -->
+            </div>
+        </div>
     </div>
 </body>
 
